@@ -1,0 +1,24 @@
+<p-table #dt [columns]="cols" [value]="cars" [scrollable]="true" [rows]="10" scrollHeight="270px" [virtualRowHeight]="30" [loading]="loading"
+    [virtualScroll]="true" (onLazyLoad)="loadCarsLazy($event)" [lazy]="true" [totalRecords]="totalRecords">
+  <ng-template pTemplate="caption">
+    <p>List of Cars</p>
+    <div class="text-left">
+      <p-multiSelect [options]="columnOptions" [showToggleAll]="false" (onChange)="selectionItemForFilter($event)" [(ngModel)]="cols" maxSelectedLabels="{0} columns selected">
+      </p-multiSelect>
+    </div>
+  </ng-template>
+    <ng-template pTemplate="header" let-columns>
+        <tr>
+            <th *ngFor="let col of cols">
+                {{col.header}} 
+            </th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-rowData let-columns="columns">
+        <tr style="height:30px">
+            <td *ngFor="let col of cols">
+                {{rowData[col.field]}}
+            </td>
+        </tr>
+    </ng-template>
+</p-table> 

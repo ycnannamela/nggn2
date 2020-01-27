@@ -1,0 +1,22 @@
+{
+  "name": "yes",
+  "version": "1.0.0",
+  "description": "First py service",
+  "main": "index.js",
+  "scripts": {
+    "test": "ping"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ycnannamela/ang.git"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "ycnannamela",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ycnannamela/ang/issues"
+  },
+  "homepage": "https://github.com/ycnannamela/ang#readme"
+}

@@ -1,0 +1,8 @@
+/* Add application styles & imports to this file! */
+@import "~primeng/resources/primeng.min.css";
+@import "~primeng/resources/themes/omega/theme.css";
+
+
+body {
+  font-family: ubuntu, "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
